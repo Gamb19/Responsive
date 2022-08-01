@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 header{
     background-color: #0f3460;
@@ -12,10 +13,25 @@ header{
     "header nav ";
     font-size: 15px;
 }
+body{
+    display: grid;
+    grid-template-areas: "header header header"
+     "main main main"
+     "footer footer footer";
+}
+.header{
+    grid-area: header;
+}
+.main{
+    grid-area: main;
+}
+.footer{
+    grid-area: footer;
+}
 .header-sec{
     grid-area: header;
    text-align: center;
-  margin: 1.5% 15% 0 0;
+  margin: 1.5% 18% 0 0;
 }
 .header-sec p{
     display: inline-block;
@@ -42,6 +58,98 @@ header{
 .sec-nav select{
     background-color: #0f3460;
     color: white;
+    border: none;
+}
+.sec-main{
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: 
+    "title buscador usuarios "
+    "categories lista lista";
+}
+.logo-main{
+    grid-area: title;
+}
+.input-main{
+    grid-area: buscador;
+}
+.usuarios{
+    grid-area: usuarios;
+}
+.logo-main{
+    color: #0f3460;
+    font-size: 40px;
+    text-align: center;
+    padding-right: 25%;
+}
+.input-main{
+    width: 430px;
+    margin-bottom: 6%;
+}
+.main-input-busc{
+    width: 530px;
+    height: 40px;
+    border-radius: 100px;
+    border: 1px solid #dfe1e5;
+    display: grid;
+    grid-template-areas: "auto auto auto";
+    justify-content: center;
+    align-items: center;
+}
+.main-input-busc input{
+    width: 420px;
+    height: 35px;
+    border: none;
+    outline: none;
+}
+.search-icon{
+    background-image: url("./img/buscador.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 28px;
+    height: 18px;
+}
+.main-input-busc button{
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 0 100px 100px 0;
+    background: #4E97FD;
+    border: 1px solid #3C74C2;
+}
+.usuarios{
+    text-align: center;
+}
+.usuarios img{
+    margin-right: 3%;
+}
+
+.categories{
+    grid-area: categories;
+    margin-left: 17%;
+    background: #f6f9fc;
+    width: 300px;
+    height: 55px;
+}
+.categories img{
+    width: 37x;
+    height: 37px;
+   margin: 2% 0 0 4%;
+}
+.lista{
+    grid-area: lista;
+    margin-left: 10%;
+}
+.lista ul li{
+    display: inline-block;
+   margin: 3% 3% 0 0;
+}
+.lista-select{
+    border: none;
 }
 
 
@@ -72,16 +180,27 @@ header{
 
 
 
-
-
-@media (max-width: 768px) {
-*{
-    font-size: 14px;
-}
-.header-sec{
+@media (max-width: 1110px) {
+    .lista{
+        display: grid;
+        grid-template-areas: "lista1 lista2"
+        "lista1 lista2";
+    }
+    .sec-main{
+        grid-template-areas: 
+        "title usuarios"
+        "buscador buscador"
+        "categories categories"
+        "lista lista"
+    }
+    .lista1{
+        grid-area: lista1;
+    }
+    .lista2{
+        grid-area: lista2;
+    }
     
+    
+
+
 }
-
-
-
-   }
