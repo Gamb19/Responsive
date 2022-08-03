@@ -52,76 +52,418 @@
       </section>
     </header>
     <main class="main">
-        <section class="sec-main">
-                <h2 class="logo-main">bazar</h2>
-            <div class="input-main">
-                <div class="main-input-busc">
-                    <div class="search-icon"></div>
-                    <input type="text" placeholder="Searching for...">
-                    <button>Search</button>
-                </div>
+      <section class="sec-main">
+        <!-- Buscador -->
+        <div class="info-busc">
+          <h2 class="logo-main">bazar</h2>
+          <div class="input-main">
+            <div class="main-input-busc">
+              <div class="search-icon"></div>
+              <input type="text" placeholder="Searching for..." />
+              <button>Search</button>
             </div>
-            <div class="usuarios">
-            <img src="./img/usuario.png" alt="Usuario">
-            <img src="./img/compra.png" alt="Comprar">
           </div>
-            <!-- Fin -->
+          <div class="usuarios">
+            <img src="./img/usuario.png" alt="Usuario" />
+            <img src="./img/compra.png" alt="Comprar" />
+          </div>
+        </div>
+        <!-- Fin -->
 
-
-
+        <!-- Categorias y lista -->
+        <div class="categories-list">
           <div class="categories">
-          <img src="./img/cuadrados.png">
-          <select>
-            <option value="categories">
-              categories
-            </option>
-          </select>
+            <img src="./img/cuadrados.png" />
+            <select class="categories-select">
+              <option value="categories">categories</option>
+            </select>
+          </div>
+
+          <div class="lista">
+            <ul>
+              <li>
+                <select class="lista-select lista1">
+                  <option value="Home">Home</option>
+                </select>
+              </li>
+              <li>
+                <select class="lista-select lista1">
+                  <option value="Mega menu">Mega menu</option>
+                </select>
+              </li>
+              <li>
+                <select class="lista-select lista1">
+                  <option value="Full screen menu">Full screen menu</option>
+                </select>
+              </li>
+              <li>
+                <select class="lista-select">
+                  <option value="pages">Pages</option>
+                </select>
+              </li>
+              <li>
+                <select class="lista-select lista2">
+                  <option value="User account">User account</option>
+                </select>
+              </li>
+              <li>
+                <select class="lista-select lista2">
+                  <option value="Vendor account">Vendor account</option>
+                </select>
+              </li>
+            </ul>
+          </div>
         </div>
+        <!--  Fin Categorias y lista -->
 
-
-        <div class="lista">
-          <ul>
-            <li>
-              <select class="lista-select lista1">
-                <option value="Home">Home</option>
-              </select>
-            </li>
-            <li>
-              <select class="lista-select lista1">
-                <option value="Mega menu">Mega menu</option>
-              </select>
-            </li>
-            <li>
-              <select class="lista-select lista1">
-                <option value="Full screen menu">Full screen menu</option>
-              </select>
-            </li>
-            <li>
-              <select class="lista-select lista2">
-                <option value="pages">Pages</option>
-              </select>
-            </li>
-            <li>
-              <select class="lista-select lista2">
-                <option value="User account">User account </option>
-              </select>
-            </li>
-            <li>
-              <select class="lista-select lista2">
-                <option value="Vendor account">Vendor account</option>
-              </select>
-            </li>
-          </ul>
+        <!--  Medicina -->
+        <div class="medicina">
+          <div class="medicina-title">
+            <h2>
+              Delivering medicine<br />
+              to your Doorstep<br />
+              within 30 minutes
+            </h2>
+            <button class="shop">Shop Now</button>
+          </div>
+          <div class="medicina-img">
+            <img src="./img/medicina.png" />
+          </div>
         </div>
-      
+        <!--  Fin Medicina-->
+
+        <!-- Aside-->
+        <div class="articulos-aside">
+          <aside class="aside">
+            <h3>Categories</h3>
+            <ul>
+              <li>
+                <img src="./img/casa.png" />
+                <a href="#"> Home </a>
+              </li>
+
+              <li>
+                <img src="./img/trofeo.png" />
+                <a href="#"> Popular products </a>
+              </li>
+
+              <li>
+                <img src="./img/trending.png" />
+                <a href="#"> All products </a>
+              </li>
+
+              <li class="select-aside">
+                <img src="./img/beauty.png" />
+                <select>
+                  <option value="Health and beauty">Health and beauty</option>
+                </select>
+              </li>
+              <li class="select-aside">
+                <img src="./img/mascara.png" />
+                <select>
+                  <option value="mascara">Mascara</option>
+                </select>
+              </li>
+              <li class="select-aside">
+                <img src="./img/powder.png" alt="" />
+                <select name="" id="">
+                  <option value="powder">Powder</option>
+                </select>
+              </li>
+              <li class="select-aside">
+                <img src="./img/lotion.png" alt="" />
+                <select name="" id="">
+                  <option value="Lotion">Lotion</option>
+                </select>
+              </li>
+              <li class="select-aside">
+                <img src="./img/beauty.png" alt="" />
+                <select name="" id="">
+                  <option value="Makeup">Makeup</option>
+                </select>
+              </li>
+              <li class="select-aside">
+                <img src="./img/lipstick.png" />
+                <select>
+                  <option value="Lipstick">Lipstick</option>
+                </select>
+              </li>
+              <li class="select-aside">
+                <img src="./img/facemask.png" alt="" />
+                <select name="" id="">
+                  <option value="Face mask">Face mask</option>
+                </select>
+              </li>
+              <li>
+                <img src="./img/termometro.png" alt="" />
+                <a href="#"> Digital Thermomether </a>
+              </li>
+              <li>
+                <img src="./img/Oxygen.png" alt="" />
+                <a href="#"> Oxygen pump </a>
+              </li>
+              <li>
+                <img src="./img/lense.png" alt="" />
+                <a href="#"> Lense case kit </a>
+              </li>
+              <li>
+                <img src="./img/mandala.png" alt="" />
+                <a href="#"> Automotive </a>
+              </li>
+            </ul>
+          </aside>
+
+          <div class="enfermera">
+            <figure>
+              <figcaption class="figcaption-enfer">
+                <img src="./img/manos.png" alt="" class="manos-p" />
+                <p class="manos-p">
+                  Our pharmaciest are<br />
+                  here to help people
+                </p>
+              </figcaption>
+            </figure>
+            <div class="img-enfermera">
+              <img src="./img/enfermera.png" alt="" />
+            </div>
+          </div>
+
+          <div class="cremas">
+            <div class="text-cre">
+              <p>beauty pack</p>
+              <h3>Cream Bright up<br />to 25%</h3>
+              <button>Shop now</button>
+            </div>
+
+            <div class="img-cre">
+              <img src="./img/cremas.png" alt="" />
+            </div>
+          </div>
+
+          <div class="top-products">
+            <div class="top-products-title">
+              <h2>Top products</h2>
+              <p>Best deal with medical and beauties items</p>
+            </div>
+
+            <div class="art1">
+              <div class="etiqueta">8% off</div>
+              <figure>
+                <img src="./img/nivea.png" alt="" class="img-central" />
+                <figcaption>
+                  <p>Vichy Livtactif Nuir cream</p>
+                  <div class="estrellas">
+                    <a href="#">
+                      <img src="./img/estrella.png" alt="" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/estrella.png" alt="" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/estrella.png" alt="" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/estrella.png" alt="" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/estrella.png" alt="" />
+                    </a>
+                  </div>
+                  <p><span class="precio">%173.38 </span><del>189.00</del></p>
+
+                  <button class="Add">+ Add to cart</button>
+                  <button class="corazon">
+                    <img src="./img/corazon.png" alt="" />
+                  </button>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="art1 art2">
+              <div class="etiqueta">9% off</div>
+              <figure>
+                <img src="./img/etetos.png" alt="" class="img-central" />
+                <figcaption>
+                  <p>Estetocophye</p>
+                  <div class="estrellas">
+                    <a href="#">
+                      <img src="./img/estrella.png" alt="" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/estrella.png" alt="" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/estrella.png" alt="" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/vacia.png" alt="" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/vacia.png" alt="" />
+                    </a>
+                  </div>
+                  <p><span class="precio">%173.38 </span><del>189.00</del></p>
+
+                  <button class="Add">+ Add to cart</button>
+                  <button class="corazon">
+                    <img src="./img/corazon.png" alt="" />
+                  </button>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="art1 art2 art3">
+              <div class="etiqueta">9% off</div>
+              <figure>
+                <img src="./img/shypo.png" alt="" class="img-central" />
+                <figcaption>
+                  <p>Vichy Livtactif Nuir cream</p>
+                  <div class="estrellas">
+                    <a href="#">
+                      <img src="./img/estrella.png" alt="" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/estrella.png" alt="" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/estrella.png" alt="" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/vacia.png" alt="" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/vacia.png" alt="" />
+                    </a>
+                  </div>
+                  <p><span class="precio">%173.38 </span><del>189.00</del></p>
+
+                  <button class="Add">+ Add to cart</button>
+                  <button class="corazon">
+                    <img src="./img/corazon.png" alt="" />
+                  </button>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="All-products-title">
+              <h2>All products</h2>
+              <p>Best deal with medical and beauties items</p>
+            </div>
+
+            <div class="art4">
+              <div class="etiqueta">9% off</div>
+              <figure>
+                <img src="./img/crema2.png" alt="" class="img-central" />
+                <figcaption>
+                  <p>Vichy Livtactif Nuir cream</p>
+                  <div class="estrellas">
+                    <a href="#">
+                      <img src="./img/estrella.png" alt="" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/estrella.png" alt="" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/estrella.png" alt="" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/estrella.png" alt="" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/estrella.png" alt="" />
+                    </a>
+                  </div>
+                  <p><span class="precio">%173.38 </span><del>189.00</del></p>
+
+                  <button class="Add">+ Add to cart</button>
+                  <button class="corazon">
+                    <img src="./img/corazon.png" alt="" />
+                  </button>
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="art5">
+              <div class="etiqueta">9% off</div>
+              <figure>
+                <img src="./img/cremagra.png" alt="" class="img-central" />
+                <figcaption>
+                  <p>Vichy Livtactif Nuir creama</p>
+                  <div class="estrellas">
+                    <a href="#">
+                      <img src="./img/estrella.png" alt="" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/estrella.png" alt="" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/estrella.png" alt="" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/estrella.png" alt="" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/estrella.png" alt="" />
+                    </a>
+                  </div>
+                  <p><span class="precio">%173.38 </span><del>189.00</del></p>
+
+                  <button class="Add">+ Add to cart</button>
+                  <button class="corazon">
+                    <img src="./img/corazon.png" alt="" />
+                  </button>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="art6">
+              <div class="etiqueta">9% off</div>
+              <figure>
+                <img src="./img/cremaschi.png" alt="" class="img-central" />
+                <figcaption>
+                  <p>Vichy Livtactif Nuir cream</p>
+                  <div class="estrellas">
+                    <a href="#">
+                      <img src="./img/estrella.png" alt="" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/estrella.png" alt="" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/estrella.png" alt="" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/estrella.png" alt="" />
+                    </a>
+                    <a href="#">
+                      <img src="./img/estrella.png" alt="" />
+                    </a>
+                  </div>
+                  <p><span class="precio">%173.38 </span><del>189.00</del></p>
+
+                  <button class="Add">+ Add to cart</button>
+                  <button class="corazon">
+                    <img src="./img/corazon.png" alt="" />
+                  </button>
+                </figcaption>
+              </figure>
+            </div>
 
 
 
 
 
-      
 
-    </section>
+
+
+
+
+
+
+
+
+          </div> 
+        </div>
+        <!-- Fin Aside y enfermera-->
+
+        <!-- Top products-->
+      </section>
     </main>
     <footer class="footer"></footer>
   </body>

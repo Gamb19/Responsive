@@ -66,27 +66,32 @@ body{
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,1fr);
     grid-template-areas: 
-    "title buscador usuarios "
-    "categories lista lista";
+    "info-busc info-busc info-busc"
+    "categories-list categories-list categories-list"
+    "medicina medicina medicina"
+    "artside artside artside"
+    "toppro toppro toppro"
+    "allpro allpro allpro";
+}
+.info-busc{
+    grid-area: info-busc;
+    display: grid;
+    grid-template-areas: "title buscador usuarios";
 }
 .logo-main{
     grid-area: title;
-}
-.input-main{
-    grid-area: buscador;
-}
-.usuarios{
-    grid-area: usuarios;
-}
-.logo-main{
     color: #0f3460;
     font-size: 40px;
     text-align: center;
     padding-right: 25%;
 }
 .input-main{
+    grid-area: buscador;
     width: 430px;
     margin-bottom: 6%;
+}
+.usuarios{
+    grid-area: usuarios;
 }
 .main-input-busc{
     width: 530px;
@@ -127,7 +132,16 @@ body{
 .usuarios img{
     margin-right: 3%;
 }
-
+.categories-list{
+    grid-area: categories-list;
+    display: grid;
+    grid-template-areas: "categories lista lista";
+    margin-bottom: 2%;
+}
+.categories-select{
+    border: none;
+    background-color: #f6f9fc;
+}
 .categories{
     grid-area: categories;
     margin-left: 17%;
@@ -136,7 +150,7 @@ body{
     height: 55px;
 }
 .categories img{
-    width: 37x;
+    width: 37px;
     height: 37px;
    margin: 2% 0 0 4%;
 }
@@ -152,6 +166,251 @@ body{
     border: none;
 }
 
+.medicina{
+    width: 100%;
+    grid-area: medicina;
+    background-color: #efefef;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: "titmed imgmed"
+    "butmed imgmed";
+    height: 400px;
+}
+.medicina-title{
+grid-area: titmed;
+}
+.medicina-title{
+    color: #2b3445;
+    text-align: left;
+    margin: 10% 0 0 12%;
+    font-size: 25px;
+}
+.shop{
+    background-color: #4E97FD;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    width: 17%;
+    height: 17%;
+    margin-top: 5%;
+}
+.medicina-img{
+    grid-area: imgmed;
+    margin-top: 10%;
+}
+.articulos-aside{
+    grid-area: artside;
+    display: grid;
+    grid-template-areas: "aside enfermera cremas"
+    "aside product product"
+    "none product-all product-all";
+    margin-top: 3%;
+    grid-template-rows: 350px;
+}
+.aside{
+    grid-area: aside;
+    margin: 5% 0 0 15%;
+}
+.aside ul{
+    list-style: none;
+}
+.aside li{
+    margin-bottom: 2%;
+    background-color: #f3f5f9;
+    width: 250px;
+}
+.aside a{
+    text-decoration: none;
+    color: #4b5871;
+}
+.aside select{
+border: none;
+background-color: transparent;
+font-size: 17px;
+color: #4b5871;
+cursor: pointer;
+}
+.aside h3{
+    background-color: #b8defe;
+    text-align: center;
+    width: 250px;
+    height: 40px;
+    border-radius: 5px 5px 0 0;
+}
+.enfermera{
+    grid-area: enfermera;
+    display: grid;
+    grid-template-areas: "cap fig";
+    border: 1px solid #eef2f5;
+    border-radius: 20px;
+    height: 200px;
+    width: 430px;
+    margin: 3% 0 0 0;
+}
+.img-enfermera{
+    grid-area: fig;
+    margin: 5% 0 0 5%;
+}
+.figcaption-enfer{
+    grid-area: cap;
+    border-radius: 20px 100px 100px 20px;
+    background-color: #b8defe;
+    height: 200px;
+    text-align: center;
+    padding-top: 25%;
+}
+.cremas{
+    grid-area: cremas;
+    display: grid;
+    grid-template-areas: "info-cre cremas";
+    border: 1px solid #eef2f5;
+    border-radius: 20px;
+    height: 195px;
+    width: 430px;
+    margin: 3% 0 0 8%;
+}
+.text-cre{
+    grid-area: info-cre;
+    padding: 20% 0 0 10%;
+    text-align: left;
+}
+.text-cre p, .text-cre h3{
+    margin-bottom: 2%;
+}
+.text-cre button{
+    background-color: #4E97FD;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    width: 35%;
+    height: 17%;
+    margin-top: 5%;
+    cursor: pointer;
+}
+.img-cre{
+    grid-area: cremas;
+    margin: 8% 0 0 5%;  
+}
+.top-products{
+grid-area: product;
+display: grid;
+grid-template-areas: "title title title"
+"art1 art2 art3"
+"title-all title-all title-all"
+"art4 art5 art6";
+}
+.top-products-title{
+    grid-area: title;
+    
+}
+.art1{
+    grid-area: art1;
+    margin-top: 8%;
+    width: 60%;
+    border: 1px solid #eef2f5;
+    border-radius: 5px;
+}
+.estrellas a{
+text-decoration: none;
+}
+.art1 figcaption{
+    border: 1px solid #eef2f5;
+    margin-top: 2%;
+}
+.art1 p{
+    margin-top: 4%;
+}
+.etiqueta{
+    background-color: #4E97FD;
+    width: 60px;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}
+.img-central{
+margin: 5% 0 14% 25%;
+}
+.Add{
+    background-color: #4E97FD;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 170px;
+    height: 35px;
+    cursor: pointer;
+    margin-bottom: 2%;
+}
+.corazon{
+    background-color: #4E97FD;
+    color: white;
+    border: none;
+    cursor: pointer;
+    height: 35px;
+    border-radius: 5px;
+}
+.corazon img{
+    margin-top: 2%;
+}
+.precio{
+    color: #4E97FD;
+}
+.art2{
+    grid-area: art2;
+}
+.art2 .img-central{
+    width: 110px;
+    height: 120px;
+    margin-bottom: 20%;
+}
+.art3{
+    grid-area: art3;
+}
+.All-products{
+    grid-area: product-all;
+    display: grid;
+    grid-template-areas: 
+    "art4 art5 art6";
+}
+.art4{
+    grid-area: art4;
+    width: 65%;
+    border: 1px solid #eef2f5;
+    border-radius: 5px;
+}
+.All-products-title{
+    margin: 5% 0 5% 0;
+}
+.All-products-title{
+    grid-area: title-all;
+}
+.art4 figcaption{
+    border: 1px solid #eef2f5;
+    margin-top: 2%;
+}
+.art4 p{
+    margin-top: 4%;
+}
+.art5{
+    grid-area: art5;
+    width: 65%;
+    border: 1px solid #eef2f5;
+    border-radius: 5px;
+}
+.art5 figcaption, .art6 figcaption{
+    border: 1px solid #eef2f5;
+    margin-top: 2%;
+}
+.art5 p, .art6 p{
+    margin-top: 4%;
+}
+.art6{
+    grid-area: art6;
+    width: 65%;
+    border: 1px solid #eef2f5;
+    border-radius: 5px;
+}
 
 
 
@@ -175,32 +434,64 @@ body{
 
 
 
-
-
-
-
-
-@media (max-width: 1110px) {
-    .lista{
-        display: grid;
-        grid-template-areas: "lista1 lista2"
-        "lista1 lista2";
-    }
-    .sec-main{
+@media (max-width: 1100px) {
+    .info-busc{
+        margin-left: 20%;
         grid-template-areas: 
-        "title usuarios"
-        "buscador buscador"
-        "categories categories"
-        "lista lista"
+        "title usuarios usuarios"
+        "buscador buscador buscador";
     }
-    .lista1{
-        grid-area: lista1;
+    .usuarios{
+        margin-right: 20%;
     }
+    
+    .categories-list{
+        margin: 0 auto;
+        grid-template-areas: "categories categories categories"
+        "lista lista lista";
+    }
+    .aside{
+        position: sticky;
+    }
+    .Add{  
+        width: 100px;
+        height: 20px;
+    }
+    .medicina{
+        grid-template-areas: "titmed imgmed"
+        "titmed imgmed";
+        }
     .lista2{
-        grid-area: lista2;
+        margin-left: 70%;
     }
-    
-    
-
-
+    .articulos-aside{
+        grid-template-areas: "aside enfermera enfermera"
+        "aside cremas cremas"
+        "none product product"
+         ;
+    }
+    .enfermera, .cremas{
+        margin: 3% 0 0 10%;
+    }
+    .corazon{
+        margin: 0;
+    }
+    .top-products{
+        margin: 5% 0 0 10%;
+        grid-template-areas:
+        "title title title"
+        "art1 art1 art1"
+        "art2 art2 art2"
+        "art3 art3 art3"
+        "title-all title-all title-all"
+        "art4 art4 art4"
+        "art5 art5 art5"
+        "art6 art6 art6";
+    }
+    .art1,.art4,.art5,.art6{
+        width: 40%;
+    }
+    .enfermera, .cremas, .top-products, .All-products{
+        margin-left: 10%;
+    }
 }
