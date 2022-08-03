@@ -204,7 +204,8 @@ grid-area: titmed;
     display: grid;
     grid-template-areas: "aside enfermera cremas"
     "aside product product"
-    "none product-all product-all";
+    "none product-all product-all"
+    "none labels labels";
     margin-top: 3%;
     grid-template-rows: 350px;
 }
@@ -411,28 +412,112 @@ margin: 5% 0 14% 25%;
     border: 1px solid #eef2f5;
     border-radius: 5px;
 }
+.labels{
+    grid-area: labels;
+    display: grid;
+    grid-template-areas:
+    "label1 label2 label3";
+    margin: 5% 0 0 0;
+}
+.label1{
+    grid-area: label1;
+    border: 1px solid #f4f5f6;
+    width: 65%;
+    border-radius: 10px;
+    background-color: #fcfcfc;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
+.label-fig{
+    margin: 8% 0 6% 10%;
+}
+.label-fig img{
+    background-color: #f3f5f9;
+    padding: 2%;
+    margin-right: 3%;
+    border-radius: 25px;
+}
+.label-figcap{
+    display: inline-block;
+}
+.label-figcap p{
+    color: #4b5871;
+    margin-top: 1%;
+}
+.label2{
+    border: 1px solid #f4f5f6;
+    width: 65%;
+    border-radius: 10px;
+    background-color: #fcfcfc;
+    grid-area: label2;
+}
+.label3{
+    grid-area: label3;
+    border: 1px solid #f4f5f6;
+    width: 65%;
+    border-radius: 10px;
+    background-color: #fcfcfc
+}
+footer{
+    margin-left: 25%;
+    width: 67%;
+    height: 280px;
+    background-color: #0f3460;
+    border-radius: 15px;
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "titles icons "
+    "titles icons"
+}
+.titles-ft{
+    margin: 7%;
+    grid-area: titles;
+}
+.titles-ft h2{
+    color: white;
+    margin-bottom: 2%;
+    font-size: 40px;
+}.titles-ft p{
+    color: white;
+}
+.titles-ft figure img{
+    width: 32px;
+    height: 32px;
+}
+.titles-ft figure{
+    display: inline-block;
+    margin: 4% 10% 0 0;
+    background-color: #0c2a4d;
+    padding: 2%;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.titles-ft figcaption{
+    display: inline-block;
+    color: white;
+}
+.titles-ft figcaption p{
+    font-size: 12px;
+}
+.icons-ft{
+    grid-area: icons;
+}
+.icons-ft ul{
+    margin-top: 17%;
+    list-style: none;
+}
+.icons-ft ul li{
+    margin-bottom: 3%;
+}
+.icons-ft a{
+    text-decoration: none;
+    color: white;
+}
+.titles-ft{
+    margin: 7%;
+}
 
 @media (max-width: 1100px) {
     .info-busc{
@@ -468,7 +553,7 @@ margin: 5% 0 14% 25%;
         grid-template-areas: "aside enfermera enfermera"
         "aside cremas cremas"
         "none product product"
-         ;
+         "none labels labels";
     }
     .enfermera, .cremas{
         margin: 3% 0 0 10%;
@@ -493,5 +578,23 @@ margin: 5% 0 14% 25%;
     }
     .enfermera, .cremas, .top-products, .All-products{
         margin-left: 10%;
+    }
+    .labels{
+        grid-template-areas: 
+        "label1 label1 label1"
+        "label2 label2 label2"
+        "label3 label3 label3";
+    }
+    .label1,.label2,.label3{
+    width: 40%;
+    margin:3% 0 0 5%;
+    }
+    footer{
+        margin: 5% 0 0 0;
+        width: 100%;
+        border-radius: 5px;
+    }
+    .titles-ft figure{
+        margin-right: 2%;
     }
 }
